@@ -13,7 +13,7 @@ const Main = () => {
             empower investors to make informed decisions, though market volatility and external factors can pose challenges 
             to precision.
           </p>
-          <Button text="Login" class="btn btn-info" url="/login" />
+          <Button text="Explore Now" class="btn btn-info" url="/dashboard" />
         </div>
       </div>
     </>

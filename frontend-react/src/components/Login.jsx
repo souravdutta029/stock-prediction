@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import axios, { Axios } from 'axios'
+import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
@@ -25,7 +25,7 @@ const Login = () => {
         localStorage.setItem('refreshToken', response.data.refresh)
         console.log('Login successfull')
         setIsLoggedIn(true)
-        navigate('/')
+        navigate('/dashboard')
       } catch (error) {
         console.error('Invalid login credentials')
         setError('Invalid login credentials')
